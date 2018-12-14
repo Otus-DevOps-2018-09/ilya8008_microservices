@@ -1,0 +1,11 @@
+project = "project_id"
+
+public_key_path = "~/.ssh/appuser.pub"
+
+private_key_path = "~/.ssh/appuser"
+
+source_ranges = ["0.0.0.0/0"]
+
+docker_disk_image = "docker-host"
+
+count = "3"

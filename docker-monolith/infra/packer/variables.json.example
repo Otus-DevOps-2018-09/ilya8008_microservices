@@ -1,0 +1,11 @@
+{
+    "project_id": "docker-223506",
+    "source_image_family": "ubuntu-1604-lts",  
+    "machine_type": "f1-micro",
+    "image_description": "docker-host",
+    "tags": "test",
+    "network": "default",
+    "disk_size": "10",
+    "disk_type": "pd-standard",
+    "ssh_username": "appuser"
+  }
