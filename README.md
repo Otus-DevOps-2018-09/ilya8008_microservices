@@ -4,6 +4,7 @@ ilya8008 microservices repository
 Build status:
 docker-1 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-1)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
 docker-2 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-2)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
+docker-3 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-3)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
 
 ## Домашнее задание 12
 
@@ -29,3 +30,15 @@ docker-2 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya
     - Написал плейбуки ansible с использованием dynamic inventory для установки докера и запуска контейнера с приложением
     - Написал шаблон packer, который создает образ с уже устаноленным docker.
 - Добавил тесты packer, terraform и ansible в .travis.yml 
+
+## Домашнее задание 14
+
+### Сделано:
+
+- Установил linter hadolint
+- Собрал образы с сервисами, создал сеть для приложения и запустил контейнеры, проверил работу.
+- Запустил контейнеры с другими сетевыми алиасами, передал адреса через опцию -e при старте контейнера, проверил работу.
+- Оптимизировал Dockerfile comment и ui, привел их в соответствие с рекомендациями hadolint.
+- Добавил Dockerfile.1 в comment и ui с использованием Alpine Linux
+- Пересобрал образы и проверил работу и уменьшение их размеров (более, чем в 10 раз).
+- Создал Docker volume, подключил его к контейнеру с db, проверил сохранность поста после перезапуска контейнеров.
