@@ -2,9 +2,14 @@
 ilya8008 microservices repository
 
 Build status:
+
 docker-1 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-1)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
+
 docker-2 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-2)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
+
 docker-3 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-3)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
+
+docker-4 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-4)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
 
 ## Домашнее задание 12
 
@@ -42,3 +47,22 @@ docker-3 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya
 - Добавил Dockerfile.1 в comment и ui с использованием Alpine Linux
 - Пересобрал образы и проверил работу и уменьшение их размеров (более, чем в 10 раз).
 - Создал Docker volume, подключил его к контейнеру с db, проверил сохранность поста после перезапуска контейнеров.
+
+## Домашнее задание 15
+
+### Сделано:
+
+- Запустил контейнеры с использованием none-драйвера, просмотрел конфигурацию сети.
+- Запустил контейнеры с использованием host-драйвера, изучил конфигурацию сети и просмотрел net-namespaces.
+- Создал bridge-сеть, запустил контейнеры с присвоением сетевых алиасов и проверил работу приложения.
+- Запустил проект в 2-х bridge-сетях, проверил работу приложения.
+- Посмотрел конфигурацию bridge-интерфейсов, правила iptables.
+- Создал файл docker-compose.yml, проверил работу приложения.
+- Изменил docker-compose под работу с 2-мя bridge-сетями и алиасами, параметризовал файл docker-compose и записал параметры в файл .env
+- Базовое имя проекта можно задать с помощью переменной окружения ```COMPOSE_PROJECT_NAME```.
+- Создал файл docker-compose.override.yml, с помощью которого можно запустить puma с указанными параметрами и изменять код приложения без сборки образа. Для этого нужно скопировать файлы на docker-host:
+```
+docker-machine scp -r post-py docker-host:/home/docker-user
+docker-machine scp -r comment docker-host:/home/docker-user
+docker-machine scp -r ui docker-host:/home/docker-user
+```
