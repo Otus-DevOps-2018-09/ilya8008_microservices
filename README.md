@@ -3,13 +3,9 @@ ilya8008 microservices repository
 
 Build status:
 
-docker-1 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-1)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
+gitlab-ci-1 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=gitlab-ci-1)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
 
-docker-2 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-2)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
-
-docker-3 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-3)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
-
-docker-4 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=docker-4)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
+gitlab-ci-2 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=gitlab-ci-2)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
 
 ## Домашнее задание 12
 
@@ -79,4 +75,11 @@ docker-machine scp -r ui docker-host:/home/docker-user
 - Добавил тестирование приложения reddit в pipeline.
 - Настроил интеграцию Pipeline с Slack (https://devops-team-otus.slack.com/messages/CDAN4QFFF/details/).
 - Т.к. я использовал docker-machine для создания ВМ и установки Gitlab CI, я написал скрипт на bash для создания runners, который нужно выполнить на docker-host.
-  
+
+## Домашнее задание 17
+
+### Сделано:
+
+- Создал dev-окружение.
+- Определил этапы stage и production c запуском с кнопки и добавил ограничение по тэгу.
+- Определил динамические окружения.
