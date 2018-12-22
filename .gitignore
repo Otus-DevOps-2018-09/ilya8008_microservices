@@ -18,3 +18,4 @@ google_compute_engine.pub
 secrets.tar
 credentials.json
 .env
+build_info.txt

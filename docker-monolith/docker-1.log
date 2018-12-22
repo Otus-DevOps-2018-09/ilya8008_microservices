@@ -1,7 +1,0 @@
-REPOSITORY                   TAG                 IMAGE ID            CREATED             SIZE
-ilya/ubuntu-tmp-file         latest              b5b2fff067f9        16 minutes ago      116MB
-ubuntu                       16.04               4a689991aa24        4 weeks ago         116MB
-hello-world                  latest              4ab4c602aa5e        2 months ago        1.84kB
-
-Отличие образа от контейнера: в контейнере доступен для записи верхний слой. Образ невозможно запустить,
-docker run создает из образа контейнер, который и запускает.
