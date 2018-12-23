@@ -19,3 +19,4 @@ secrets.tar
 credentials.json
 .env
 build_info.txt
+.DS_Store

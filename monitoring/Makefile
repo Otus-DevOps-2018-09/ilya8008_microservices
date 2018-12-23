@@ -19,3 +19,8 @@ post-py:
 prometheus: 
 		cd ./prometheus; docker build -t $(username)/prometheus .; \
 		docker push $(username)/prometheus
+
+.PHONY: alertmanager
+alertmanager: 
+		cd ./alertmanager; docker build -t $(username)/alertmanager .; \
+		docker push $(username)/alertmanager
