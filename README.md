@@ -3,7 +3,7 @@ ilya8008 microservices repository
 
 Build status:
 
-monitoring-2 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=monitoring-2)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
+logging-1 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=logging-1)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
 
 ## Домашнее задание 12
 
@@ -127,3 +127,15 @@ make prometheus username=docker_login_name
 - https://cloud.docker.com/repository/docker/ilya8008/ui
 - https://cloud.docker.com/repository/docker/ilya8008/comment
 - https://cloud.docker.com/repository/docker/ilya8008/alertmanager
+
+## Домашнее задание 20
+
+### Сделано:
+
+- Обновил код микросервисов и пересобрал образы.
+- Создал docker-compose-logging.yml.
+- Собрал образ для fluentd.
+- Изучил работу со структурированными логами с помощью kibana.
+- Изучил работу фильтров со структурированнми логами.
+- Настроил парсинг неструктурированных логов с помощью регулярных выражений.
+- Настроил парсинг неструктурированных логов с помощью grok-шаблонов.

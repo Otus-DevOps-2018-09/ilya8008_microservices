@@ -24,3 +24,8 @@ prometheus:
 alertmanager: 
 		cd ./alertmanager; docker build -t $(username)/alertmanager .; \
 		docker push $(username)/alertmanager
+
+.PHONY: fluentd
+fluentd: 
+		cd ../logging/fluentd; docker build -t $(username)/fluentd .; \
+		docker push $(username)/fluentd
