@@ -146,3 +146,16 @@ make prometheus username=docker_login_name
 
 - Создал файлы с Deployment манифестами приложений.
 - Прошел туториал Kubernetes The Hard Way
+
+## Домашнее задание 22
+
+### Сделано:
+
+- Установил и запустил Minikube-кластер.
+- Создал всенеобходимые ресурсы Deployment в yaml-файлах.
+- Создал объекты Services для post,comment,mongodb и ui.
+- Изучил addon dashboard.
+- Создал Namespace dev и запустил приложение в нем.
+- Развернул кластер Kubernetes в GCP.
+- Запустил и проверил приложение reddit в GKE.
+- Проверил работу dashboard в GKE.
