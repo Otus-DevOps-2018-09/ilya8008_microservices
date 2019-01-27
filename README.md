@@ -3,7 +3,7 @@ ilya8008 microservices repository
 
 Build status:
 
-kubernetes-1 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=kubernetes-1)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
+kubernetes-3 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=kubernetes-3)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
 
 ## Домашнее задание 12
 
@@ -159,3 +159,24 @@ make prometheus username=docker_login_name
 - Развернул кластер Kubernetes в GCP.
 - Запустил и проверил приложение reddit в GKE.
 - Проверил работу dashboard в GKE.
+
+## Домашнее задание 23
+
+### Сделано:
+
+- Убедился, что при отключенном kube-dns связность между компонентами приложения пропадает.
+- Использовал тип сервиса LoadBalancer (внешний облачный балансировщик) и проверил его работу.
+- Создал Ingress для сервиса ui.
+- Убрал балансировщик из ui-service.yml.
+- Подготовил сертификат для TLS и загрузил его в кластер kubernetes.
+- Настроил Ingress на прием только трафика HTTPS.
+- Включил network-policy для GKE.
+- Ограничил трафик, поступающий на mongodb отовсюду, кроме сервиса comment.
+- Добавил в mongo-network-policy.yml разрешающее правило для сервиса post.
+- Подключил к mongo Volume emptyDir (проверил, что при остановке PODа содержимое volume удаляется).
+- Использовал Volume gcePersistentDisk и проверил сохранность БД.
+- Использовал механизм PersistentVolume, общий для всего кластера.
+- Создал описание PersistentVolumeClaim для выделения места на хранилище.
+- Подключил PVC к mongo.
+- Создал StorageClass Fast для создания хранилищ в автоматическом режиме.
+- Подключил динамический PVC к mongo и посмотрел получившиеся тома.
