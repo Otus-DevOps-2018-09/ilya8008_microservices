@@ -1,0 +1,20 @@
+comment:
+  image:
+    repository: ilya8008/comment
+    tag: latest
+  service:
+    externalPort: 9292
+
+post:
+  image:
+    repository: ilya8008/post
+    tag: latest
+    service:
+      externalPort: 5000
+
+ui:
+  image:
+    repository: ilya8008/ui
+    tag: latest
+    service:
+      externalPort: 9292

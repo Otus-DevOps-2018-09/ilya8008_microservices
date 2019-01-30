@@ -3,7 +3,7 @@ ilya8008 microservices repository
 
 Build status:
 
-kubernetes-3 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=kubernetes-3)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
+kubernetes-4 branch: [![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices.svg?branch=kubernetes-4)](https://travis-ci.com/Otus-DevOps-2018-09/ilya8008_microservices)
 
 ## Домашнее задание 12
 
@@ -180,3 +180,18 @@ make prometheus username=docker_login_name
 - Подключил PVC к mongo.
 - Создал StorageClass Fast для создания хранилищ в автоматическом режиме.
 - Подключил динамический PVC к mongo и посмотрел получившиеся тома.
+
+## Домашнее задание 24
+
+### Сделано:
+
+- Установил клентскую часть Helm.
+- Установил Tiller.
+- Разработал Chart и Templates для ui, post и comment, и шаблонизировал их.
+- Добавил функции в шаблоны приложений.
+- С помощью механизма управления зависимостями создал Chart reddit, загрузил зависимости и проверил работу приложения
+- Установил Gitlab из репозитория.
+- Создал локальный репозиторий с исходниками приложений и отправил его в gitlab.
+- Создал файлы .gitalb-ci.yml для приложений и проверил успешную сборку образов.
+- Настроил возможность запускать отдельное окружение в Kubernetes по коммиту в ветку feature, с возможностью "убивать" их.
+- Создал staging и production среды для приложения, проверил работу приложения в staging и ручной деплой в production.
