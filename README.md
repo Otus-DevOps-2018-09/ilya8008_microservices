@@ -195,3 +195,20 @@ make prometheus username=docker_login_name
 - Создал файлы .gitalb-ci.yml для приложений и проверил успешную сборку образов.
 - Настроил возможность запускать отдельное окружение в Kubernetes по коммиту в ветку feature, с возможностью "убивать" их.
 - Создал staging и production среды для приложения, проверил работу приложения в staging и ручной деплой в production.
+
+## Домашнее задание 25
+
+### Сделано:
+
+- Установил ingress-контроллер nginx.
+- Установил и запустил Prometheus.
+- Для сбора информации о сущностях k8s включил сервис kube-state-metrics, поды node-exporter, проверил сбор метрик.
+- Добавил эндпоинты.
+- Добавил лейблы.
+- Разбил конфигурацию reddit-endpoints на 3 job'а post-endpoints, comment- endpoints, ui-endpoints.
+- Установил grafana.
+- Добавил дашборд Kubernetes cluster monitoring (via Prometheus).
+- Добавил дашборды из ДЗ по мониторингу.
+- Добавил Templating в дашборды для выбора namespace, параметризировал дашборды.
+- Импортировал график Kubernetes Deployment metrics.
+- Создал файлы конфигурации EFK, запустил efk и kibana, изучил работу системы сбора логов.
